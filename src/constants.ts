@@ -12,14 +12,17 @@ export enum PaymentStatus {
   PendingPayment = "pending_payment",
 }
 
+// Use this if you're using Event based ticketing
 export enum Tickets {
   Test = 0,
 }
 
+// It's for mapping the events with their collection names in Firestore
 export const EventMappings: Record<number, string> = {
   [Tickets.Test]: "test",
 };
 
+// Used for mapping price with ticket IDs, use only if your have price based ticketing
 export const TicketPriceToIdMap = {
   19: 0,
 };
