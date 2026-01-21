@@ -4,7 +4,7 @@ This is the base codebase for TiQr, the ticketing backend service. It is built u
 
 # Endpoints
 
-- `GET /health`: Health check endpoint to verify that the server is running.
+- `GET /`: Health check endpoint to verify that the server is running.
 
 # Technologies Used
 
@@ -16,10 +16,8 @@ This is the base codebase for TiQr, the ticketing backend service. It is built u
 1. Install `Node.js`, `pnpm` and `Nodemon` if you haven't already.
 2. Run `pnpm install`
 3. Make a copy of `.env.example` and rename it to `.env`. Fill in the required environment variables.
-4. Create a Firebase service account and download the JSON key file. Save it as `serviceAccountKey.json` in the root directory.
-5. Open two terminal tabs.
-6. In first tab, run `pnpm run watch:ts` to watch for TypeScript changes.
-7. In second tab, run `pnpm run watch:start` to start the server in development mode.
+4. Create a Firebase service account and download the JSON key file. Save it in `.env` file.
+5. Run `pnpm run dev` to watch for TypeScript changes and run the server concurrently.
 
 # Important Information
 
